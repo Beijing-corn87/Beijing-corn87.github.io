@@ -53,6 +53,6 @@ topics:
 
   - name: Web design
 
-  - name: Sass
-    web_url: https://github.com/topics/sass
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+  - name: JavaScript
+    web_url: https://github.com/topics/js
+    image_url: https://github.com/github/explore/blob/main/topics/javascript/javascript.png?raw=true

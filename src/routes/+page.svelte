@@ -6,28 +6,20 @@
   const typingSpeed = 150; // milliseconds per character
 
   onMount(() => {
-    console.log('onMount called');
-    setTimeout(() => {
-      console.log('setTimeout callback');
-      let i = 0;
-      const typingInterval = setInterval(() => {
-        console.log('setInterval callback, i =', i);
-        if (i < fullTitle.length) {
-          displayedTitle += fullTitle.charAt(i);
-          console.log('displayedTitle:', displayedTitle);
-          i++;
-        } else {
-          console.log('clearing interval');
-          clearInterval(typingInterval);
-        }
-      }, typingSpeed);
-
-      // Cleanup interval when component is destroyed
-      return () => {
-        console.log('onMount cleanup');
+    let i = 0;
+    const typingInterval = setInterval(() => {
+      if (i < fullTitle.length) {
+        displayedTitle += fullTitle.charAt(i);
+        i++;
+      } else {
         clearInterval(typingInterval);
-      };
-    }, 100); // Delay start of animation
+      }
+    }, typingSpeed);
+
+    // Cleanup interval when component is destroyed
+    return () => {
+      clearInterval(typingInterval);
+    };
   });
 </script>
 

@@ -31,7 +31,7 @@
     Hi Shmolph
   </p>
   <div class="buttons-container">
-    <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener noreferrer" class="github-button">
+    <a href="https://github.com/Beijing-corn87" target="_blank" rel="noopener noreferrer" class="github-button">
       <i class="fab fa-github"></i> GitHub Profile
     </a>
     <a href="/projects" class="projects-button">Projects</a>
@@ -99,21 +99,20 @@
 
   .github-button {
     display: inline-block;
-    font-size: 1rem;
-    padding: 12px 28px;
-    margin-top: 1.5rem;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
-    background-color: transparent;
+    font-size: 0.9rem; /* Smaller font size */
+    padding: 8px 15px; /* Reduced padding */
+    border: none; /* No border */
+    color: var(--primary-color); /* Text color */
+    background-color: transparent; /* Transparent background */
     text-decoration: none;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    margin-bottom: 1rem; /* Add some space below the GitHub button */
+    transition: color 0.3s; /* Transition for color only */
+    margin-bottom: 0.5rem; /* Reduced margin */
   }
 
   .github-button:hover {
-    background-color: var(--primary-color);
-    color: var(--background-color);
+    color: #888; /* Slightly darker on hover */
+    background-color: transparent; /* Keep transparent */
   }
 
   .buttons-container {

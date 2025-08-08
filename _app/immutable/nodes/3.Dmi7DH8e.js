@@ -1,0 +1,2 @@
+import"../chunks/DsnmJJEf.js";import"../chunks/qL1LC61O.js";import{i as o,j as t}from"../chunks/C79lt2y7.js";var a=o(`<div class="container svelte-1f20k6f"><h1 class="svelte-1f20k6f">My Projects</h1> <p class="svelte-1f20k6f">This section is currently under construction. Please check back soon to see
+    my work!</p> <a href="/" class="back-link svelte-1f20k6f">← Go Back Home</a></div>`);function n(e){var s=a();t(e,s)}export{n as component};

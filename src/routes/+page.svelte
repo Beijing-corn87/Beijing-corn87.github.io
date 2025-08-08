@@ -33,6 +33,7 @@
     code and design.
   </p>
   <a href="/projects" class="projects-button">Projects</a>
+  <a href="https://github.com/Beijing-corn87" target="_blank" rel="noopener noreferrer" class="github-button">GitHub Profile</a>
 </div>
 
 <style>

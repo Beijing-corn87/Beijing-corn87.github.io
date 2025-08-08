@@ -28,12 +28,14 @@
     {displayedTitle}<span class="cursor"></span>
   </h1>
   <p class="bio">
-    A creative developer and problem solver with a passion for building elegant,
-    efficient, and user-friendly web applications. Exploring the intersection of
-    code and design.
+    Hi Shmolph
   </p>
-  <a href="/projects" class="projects-button">Projects</a>
-  <a href="https://github.com/Beijing-corn87" target="_blank" rel="noopener noreferrer" class="github-button">GitHub Profile</a>
+  <div class="buttons-container">
+    <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener noreferrer" class="github-button">
+      <i class="fab fa-github"></i> GitHub Profile
+    </a>
+    <a href="/projects" class="projects-button">Projects</a>
+  </div>
 </div>
 
 <style>
@@ -77,7 +79,7 @@
     margin: 1.5rem auto;
   }
 
-  .projects-button {
+    .projects-button {
     display: inline-block;
     font-size: 1rem;
     padding: 12px 28px;
@@ -93,6 +95,32 @@
   .projects-button:hover {
     background-color: var(--primary-color);
     color: var(--background-color);
+  }
+
+  .github-button {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 12px 28px;
+    margin-top: 1.5rem;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 1rem; /* Add some space below the GitHub button */
+  }
+
+  .github-button:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
   }
 
   @media (max-width: 600px) {

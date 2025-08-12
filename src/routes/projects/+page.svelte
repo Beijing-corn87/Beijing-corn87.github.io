@@ -12,6 +12,10 @@
     "Python": { icon: "fa-python", color: "#3776AB" },
     "Flask": { icon: "fa-flask", color: "#000000" }, // Flask doesn't have a direct FA icon, using a generic one
     "HTML": { icon: "fa-html5", color: "#E34F26" },
+    "Go": { icon: "fa-golang", color: "#00ADD8" },
+    "Golang": { icon: "fa-golang", color: "#00ADD8" },
+    "C++": { icon: "fa-cpp", color: "#00599C" },
+    "Ruby": { icon: "fa-ruby", color: "#CC342D" },
     // Add more languages as needed
   };
 

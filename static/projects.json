@@ -2,7 +2,7 @@
   {
     "title": "Project One",
     "description": "This is a description for project one.",
-    "languages": ["Svelte", "JavaScript", "CSS"],
+    "languages": ["Go", "JavaScript", "CSS"],
     "github_link": "https://github.com/your-username/project-one"
   },
   {

@@ -86,7 +86,7 @@
   .projects-wrapper {
     height: 100vh;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    /* Removed scroll-snap-type: y mandatory; */
     /* Hide scrollbar for Chrome, Safari and Opera */
     &::-webkit-scrollbar {
       display: none;
@@ -101,7 +101,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
+    /* Removed scroll-snap-align: start; */
     padding: 2rem;
     box-sizing: border-box;
   }

@@ -1,7 +1,7 @@
 <script>
   import { onMount } from 'svelte';
 
-  const fullTitle = 'CurlyCappybara';
+  const fullTitle = 'Blue Kiwi';
   let displayedTitle = '';
   const typingSpeed = 150; // milliseconds per character
 
@@ -24,6 +24,7 @@
 </script>
 
 <div class="container">
+  <img src="/logo.png" alt="Blue Kiwi Logo" style="width: 150px; height: 150px; margin-bottom: 20px;">
   <h1 class="title">
     {displayedTitle}<span class="cursor"></span>
   </h1>

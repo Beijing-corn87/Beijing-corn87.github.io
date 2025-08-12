@@ -3,12 +3,14 @@
     "title": "Project One",
     "description": "This is a description for project one.",
     "languages": ["Go", "JavaScript", "CSS"],
-    "github_link": "https://github.com/your-username/project-one"
+    "github_link": "https://github.com/your-username/project-one",
+    "public_archive": true
   },
   {
     "title": "Project Two",
     "description": "This is a description for project two, showcasing various features.",
     "languages": ["Python", "Flask", "HTML"],
-    "github_link": "https://github.com/your-username/project-two"
+    "github_link": "https://github.com/your-username/project-two",
+    "public_archive": false
   }
 ]

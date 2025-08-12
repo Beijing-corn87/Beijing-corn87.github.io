@@ -79,6 +79,11 @@
               {/if}
             {/each}
           </div>
+          {#if project.public_archive}
+            <div class="public-archive-box">
+              Public Archive
+            </div>
+          {/if}
           {#if project.github_link}
             <a href={project.github_link} target="_blank" rel="noopener noreferrer" class="github-link">
               <i class="fab fa-github"></i> GitHub
@@ -170,6 +175,23 @@
 
   .language-link:hover {
     text-decoration: underline; /* Underline on hover */
+  }
+
+  .public-archive-box {
+    background-color: transparent; /* No fill */
+    border: 2px solid #FFD700; /* Yellow border */
+    color: #FFD700; /* Yellow text */
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem; /* Space between this and GitHub button */
+    display: block; /* Changed to block to take full width and allow centering */
+    margin-left: auto; /* Center the block */
+    margin-right: auto; /* Center the block */
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    width: fit-content; /* Adjust width to content */
   }
 
   .github-link {

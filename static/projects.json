@@ -1,10 +1,10 @@
 [
   {
-    "title": "Project One",
-    "description": "This is a description for project one.",
-    "languages": ["Go", "JavaScript", "CSS"],
-    "github_link": "https://github.com/your-username/project-one",
-    "public_archive": true
+    "title": "Calduino",
+    "description": "Code for a calculator, made on 2 arduinos",
+    "languages": ["C++"],
+    "github_link": "https://github.com/Beijing-corn87/Calduino",
+    "public_archive": false
   },
   {
     "title": "Project Two",

@@ -5,6 +5,16 @@
   let currentProjectIndex = 0;
   let projectsContainer;
 
+  const languageMap = {
+    "Svelte": { icon: "fa-svelte", color: "#FF3E00" },
+    "JavaScript": { icon: "fa-js", color: "#F7DF1E" },
+    "CSS": { icon: "fa-css3-alt", color: "#1572B6" },
+    "Python": { icon: "fa-python", color: "#3776AB" },
+    "Flask": { icon: "fa-flask", color: "#000000" }, // Flask doesn't have a direct FA icon, using a generic one
+    "HTML": { icon: "fa-html5", color: "#E34F26" },
+    // Add more languages as needed
+  };
+
   function scrollToProject(index) {
     if (projectsContainer) {
       const projectElement = projectsContainer.children[index];
@@ -54,7 +64,13 @@
           <p>{project.description}</p>
           <div class="languages">
             {#each project.languages as lang}
-              <span>{lang}</span>
+              {#if languageMap[lang]}
+                <span style="color: {languageMap[lang].color};">
+                  <i class="fab {languageMap[lang].icon}"></i> {lang}
+                </span>
+              {:else}
+                <span>{lang}</span>
+              {/if}
             {/each}
           </div>
           {#if project.github_link}
@@ -137,11 +153,8 @@
 
   .languages span {
     display: inline-block;
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-size: 0.9rem;
+    /* Removed background-color, color, padding, border-radius */
+    font-size: 1.5rem; /* Increased font size for icons */
     margin: 0.5rem;
   }
 

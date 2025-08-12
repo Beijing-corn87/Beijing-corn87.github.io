@@ -64,6 +64,9 @@
           {/if}
         </div>
       </div>
+      {#if i < data.projects.length - 1}
+        <div class="project-divider"></div>
+      {/if}
     {/each}
   {:else}
     <div class="project-page">
@@ -101,9 +104,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Removed scroll-snap-align: start; */
     padding: 2rem;
     box-sizing: border-box;
+  }
+
+  .project-divider {
+    height: 2px; /* Make it thin */
+    background-color: var(--primary-color); /* Color of the divider */
+    width: 100%; /* Ensure it goes across the whole page */
   }
 
   .project-content {

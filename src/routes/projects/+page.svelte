@@ -69,11 +69,13 @@
           <div class="languages">
             {#each project.languages as lang}
               {#if languageMap[lang]}
-                <span style="color: {languageMap[lang].color};">
+                <a href="https://github.com/topics/{lang.toLowerCase()}" target="_blank" rel="noopener noreferrer" class="language-link" style="color: {languageMap[lang].color};">
                   <i class="fab {languageMap[lang].icon}"></i> {lang}
-                </span>
+                </a>
               {:else}
-                <span>{lang}</span>
+                <a href="https://github.com/topics/{lang.toLowerCase()}" target="_blank" rel="noopener noreferrer" class="language-link">
+                  {lang}
+                </a>
               {/if}
             {/each}
           </div>
@@ -157,9 +159,17 @@
 
   .languages span {
     display: inline-block;
-    /* Removed background-color, color, padding, border-radius */
     font-size: 1.5rem; /* Increased font size for icons */
-    margin: 0.5rem;
+    margin: 1rem; /* Increased margin for more spacing */
+  }
+
+  .language-link {
+    text-decoration: none; /* Remove default underline */
+    transition: text-decoration 0.3s ease; /* Smooth transition for underline */
+  }
+
+  .language-link:hover {
+    text-decoration: underline; /* Underline on hover */
   }
 
   .github-link {

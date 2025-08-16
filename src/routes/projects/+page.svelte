@@ -21,15 +21,16 @@
 
   function scrollToProject(index) {
     if (projectsContainer) {
-      const projectElement = projectsContainer.children[index];
-      if (projectElement) {
-        projectElement.scrollIntoView({ behavior: 'smooth' });
+      const projectElements = projectsContainer.querySelectorAll('.project-page');
+      if (projectElements[index]) {
+        projectElements[index].scrollIntoView({ behavior: 'smooth' });
       }
     }
   }
 
   function nextProject() {
-    if (currentProjectIndex < data.projects.length - 1) {
+    const projectElements = projectsContainer.querySelectorAll('.project-page');
+    if (currentProjectIndex < projectElements.length - 1) {
       currentProjectIndex++;
       scrollToProject(currentProjectIndex);
     }
@@ -106,7 +107,7 @@
 
   <div class="navigation-buttons">
     <button on:click={prevProject} disabled={currentProjectIndex === 0}>Previous</button>
-    <button on:click={nextProject} disabled={currentProjectIndex === data.projects.length - 1}>Next</button>
+    <button on:click={nextProject} disabled={currentProjectIndex >= data.projects.length - 1}>Next</button>
   </div>
 
   <a href="/" class="back-home-button">← Back to Home</a>

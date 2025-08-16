@@ -7,10 +7,24 @@
     "public_archive": false
   },
   {
-    "title": "Project Two",
-    "description": "This is a description for project two, showcasing various features.",
-    "languages": ["Python", "Flask", "HTML"],
-    "github_link": "https://github.com/your-username/project-two",
+    "title": "Periodic Table Generator",
+    "description": "A small go script that generates 118 elements of the periodic table in little cards",
+    "languages": ["Go"],
+    "github_link": "https://github.com/Beijing-corn87/Periodic-table-generator",
+    "public_archive": false
+  },
+  {
+    "title": "Speedcube Timer",
+    "description": "Works with an arduino to accurately time a guy speedcubing",
+    "languages": ["C++"],
+    "github_link": "https://github.com/Beijing-corn87/Speedcube-timer",
+    "public_archive": false
+  },
+  {
+    "title": "Arduino Egg Incubator",
+    "description": "Uses 2 Arduinos to control the temperature, humidity and turning of the eggs.",
+    "languages": ["C++"],
+    "github_link": "https://github.com/Beijing-corn87/Arduino-Egg-incubator",
     "public_archive": false
   }
 ]
